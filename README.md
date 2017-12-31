@@ -1,7 +1,7 @@
 ## Robo4J-snapshot-example
-Robo4J Snapshot example shows how to use publicly available SNAPSHOT by using gradle. 
-Repository currently contains simple example that initiates, and after pressing the random 
-Key, shutdowns the Robo4J System. Sample example is configured by using Robo4J XML descriptor
+Robo4J Snapshot example shows how to use available SNAPSHOT Robo4J binaries by using gradle build system. 
+Repository contains simple example that initiates and shutdowns the Robo4J System with one RoboUnit.
+The example is configured by using Robo4J XML descriptor.
 
 
 ### Let's start with example 
