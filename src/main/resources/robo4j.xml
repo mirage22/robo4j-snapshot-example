@@ -1,0 +1,9 @@
+<robo4j>
+    <roboUnit id="httpServer">
+        <class>com.robo4j.socket.http.units.HttpServerUnit</class>
+        <config name="com.robo4j.root">
+            <value name="port" type="int">8050</value>
+            <value name="targets" type="String">{}</value>
+        </config>
+    </roboUnit>
+</robo4j>

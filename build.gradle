@@ -1,0 +1,25 @@
+group 'com.example.roboj'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply from: 'libraries.gradle'
+
+version "${robo4jVersion}"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile "com.robo4j:robo4j-core:${robo4jVersion}"
+    compile "com.robo4j:robo4j-socket-http:${robo4jVersion}"
+    testCompile "junit:junit:${junitVersion}@jar"
+    testCompile "org.hamcrest:hamcrest-all:${hamcrestAllVersion}@jar"
+    testCompile "org.mockito:mockito-all:${mockitoAllVersion}@jar"
+}
